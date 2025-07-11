@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>🌡️ 現在の水温 🌡️</h2>
+    <div class="temperature-display">
+        <div class="temperature-value">
+            <span id="temperature">{{ temperature }}</span>°C
+        </div>
+        <div class="status-indicator">
+            <span class="status-text">測定中...</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
