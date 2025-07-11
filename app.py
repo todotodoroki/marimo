@@ -14,4 +14,5 @@ def api_temperature():
     return jsonify({'temperature': temperature})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # 例：localhostのポート8080で起動
+    app.run(debug=True, host='localhost', port=8080)
